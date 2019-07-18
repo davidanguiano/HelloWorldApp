@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- In this case the 'layout_height' of the elements must be 0dp
+     and the 'layout_width' must be set as 'match_parent' in order
+     to make that the elements take the same space vertically in the
+     sacreen. And in the 'layout_weight' it must be specified the
+     percentege that we want thtat a certain element take (based on
+     our own assumption about the total percentage of the screen) -->
+
+    <!-- Here we assume that the total screen size is 100% -->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="50"
+        android:text="Button"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:text="Hello World"
+
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:gravity="center"/>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- with the 'layout_width=0' and the 'layout_weight=25' both the TextView and the
+     Button will take 25% of the screen hozontally (because the orientation of the layout
+     is 'hozontal').
+
+     The '25' value can be any arbitrary value, but both elements (or the number of elements
+     that we want with the same with in the screen) must have assigned the same value in the
+     property 'layout_weight' and 0dp in the 'layout_width'
+
+     It is also important that the UI elements has height of 'wrap_content' -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+
+        android:layout_weight="80"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:text="Button" />
+
+</LinearLayout>
